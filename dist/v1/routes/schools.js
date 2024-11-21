@@ -7,5 +7,4 @@ const express_1 = __importDefault(require("express"));
 const school_controller_1 = require("../controllers/school.controller");
 const schoolRouter = express_1.default.Router();
 schoolRouter.get('/get', school_controller_1.getSchool);
-console.log('Schools fetched successfully in routes');
 exports.default = schoolRouter;

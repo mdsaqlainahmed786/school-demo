@@ -12,7 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getSchool = void 0;
 function getSchool(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log('Schools fetched successfully');
         res.status(200).json({ message: 'Schools fetched successfully' });
         return;
     });
