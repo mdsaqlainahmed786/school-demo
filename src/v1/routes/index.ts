@@ -4,8 +4,8 @@ import schoolRouter from './schools';
 const app = express();
 app.use(cors());
 app.use(express.json());
+// Mount the school router on the /api/v1/schools route
 app.use('/api/v1/schools', schoolRouter);
-
 
 
 

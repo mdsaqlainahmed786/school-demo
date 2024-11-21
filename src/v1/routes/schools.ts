@@ -1,12 +1,11 @@
 import express from 'express';
-import { addSchools, getSchool,  } from '../controllers/school.controller';
+import { addSchools, getSchools  } from '../controllers/school.controller';
 const schoolRouter = express.Router();
 
-
-
-
-schoolRouter.get('/get', getSchool);
+// Define the routes for the school resource
 schoolRouter.post('/add', addSchools);
+
+schoolRouter.get('/listSchools', getSchools);
 
 
 
